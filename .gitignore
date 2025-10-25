@@ -3,6 +3,7 @@
 # dependencies
 /node_modules
 /apps/frontend/node_modules
+/apps/backend/node_modules
 /apps/frontend/.pnp
 /apps/frontend/.pnp.*
 /apps/frontend/.yarn/*
@@ -32,7 +33,8 @@
 /apps/frontend/.pnpm-debug.log*
 
 # env files (can opt-in for committing if needed)
-/apps/frontend/.env*
+/apps/backend/.env
+/apps/frontend/.env
 
 # vercel
 /apps/frontend/.vercel
