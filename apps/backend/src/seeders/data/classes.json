@@ -1,0 +1,161 @@
+[
+  {
+    "classId": 1,
+    "description": "Chemicals used in industry, science and photography, as well as in agriculture, horticulture and forestry; unprocessed artificial resins, unprocessed plastics; manures; fire extinguishing compositions; tempering and soldering preparations; chemical substances for preserving foodstuffs; tanning substances; adhesives used in industry."
+  },
+  {
+    "classId": 2,
+    "description": "Paints, varnishes, lacquers; preservatives against rust and against deterioration of wood; colorants; mordants; raw natural resins; metals in foil and powder form for use in painting, decorating, printing and art."
+  },
+  {
+    "classId": 3,
+    "description": "Bleaching preparations and other substances for laundry use; cleaning, polishing, scouring and abrasive preparations; non-medicated soaps; perfumery, essential oils, non-medicated cosmetics, non-medicated hair lotions; non-medicated dentifrices."
+  },
+  {
+    "classId": 4,
+    "description": "Industrial oils and greases; lubricants; dust absorbing, wetting and binding compositions; fuels (including motor spirit) and illuminants; candles and wicks for lighting."
+  },
+  {
+    "classId": 5,
+    "description": "Pharmaceuticals and other preparations for medical or veterinary purposes; sanitary preparations for medical purposes; dietetic food and substances adapted for medical or veterinary use; food for babies; dietary supplements for human beings and animals; plasters, materials for dressings; material for stopping teeth, dental wax; disinfectants; preparations for destroying vermin; fungicides, herbicides."
+  },
+  {
+    "classId": 6,
+    "description": "Common metals and their alloys; metal building materials; transportable buildings of metal; materials of metal for railway tracks; non-electric cables and wires of common metal; ironmongery, small items of metal hardware; pipes and tubes of metal; safes; goods of common metal not included in other classes; ores."
+  },
+  {
+    "classId": 7,
+    "description": "Machines and machine tools; motors and engines (except for land vehicles); machine coupling and transmission components (except for land vehicles); agricultural implements other than hand-operated; incubators for eggs; automatic vending machines."
+  },
+  {
+    "classId": 8,
+    "description": "Hand tools and implements (hand-operated); cutlery; side arms; razors."
+  },
+  {
+    "classId": 9,
+    "description": "Scientific, nautical, surveying, photographic, cinematographic, optical, weighing, measuring, signaling, checking (supervision), life-saving and teaching apparatus and instruments; apparatus and instruments for conducting, switching, transforming, accumulating, regulating or controlling electricity; apparatus for recording, transmission or reproduction of sound or images; magnetic data carriers, recording discs; automatic vending machines and mechanisms for coin-operated apparatus; cash registers, calculating machines, data processing equipment and computers; fire-extinguishing apparatus."
+  },
+  {
+    "classId": 10,
+    "description": "Surgical, medical, dental and veterinary apparatus and instruments, artificial limbs, eyes and teeth; orthopedic articles; suture materials."
+  },
+  {
+    "classId": 11,
+    "description": "Apparatus for lighting, heating, steam generating, cooking, refrigerating, drying, ventilating, water supply and sanitary purposes."
+  },
+  {
+    "classId": 12,
+    "description": "Vehicles; apparatus for locomotion by land, air or water."
+  },
+  {
+    "classId": 13,
+    "description": "Firearms; ammunition and projectiles; explosives; fireworks."
+  },
+  {
+    "classId": 14,
+    "description": "Precious metals and their alloys and goods in precious metals or coated therewith, not included in other classes; jewelry, precious and semi-precious stones; horological and chronometric instruments."
+  },
+  { "classId": 15, "description": "Musical instruments." },
+  {
+    "classId": 16,
+    "description": "Paper, cardboard and goods made from these materials, not included in other classes; printed matter; bookbinding material; photographs; stationery; adhesives for stationery or household purposes; artists' materials; paint brushes; typewriters and office requisites (except furniture); instructional and teaching material (except apparatus); plastic materials for packaging (not included in other classes); printers' type; printing blocks."
+  },
+  {
+    "classId": 17,
+    "description": "Rubber, gutta-percha, gum, asbestos, mica and goods made from these materials and not included in other classes; plastics in extruded form for use in manufacture; packing, stopping and insulating materials; flexible pipes, not of metal."
+  },
+  {
+    "classId": 18,
+    "description": "Leather and imitations of leather; animal skins and hides; trunks and travelling bags; umbrellas, parasols and walking sticks; whips, harness and saddlery; collars, leashes and clothing for animals."
+  },
+  {
+    "classId": 19,
+    "description": "Building materials (non-metallic); non-metallic rigid pipes for building; asphalt, pitch and bitumen; non-metallic transportable buildings; monuments, not of metal."
+  },
+  {
+    "classId": 20,
+    "description": "Furniture, mirrors, picture frames; containers, not of metal, for storage or transport; unworked or semi-worked bone, horn, ivory, whalebone or mother-of-pearl; shells; meerschaum; yellow amber."
+  },
+  {
+    "classId": 21,
+    "description": "Household or kitchen utensils and containers; combs and sponges; brushes (except paintbrushes); brush-making materials; articles for cleaning purposes; steel wool; unworked or semi-worked glass (except building glass); glassware, porcelain and earthenware."
+  },
+  {
+    "classId": 22,
+    "description": "Ropes and string; nets; tents, awnings and tarpaulins; sails; sacks for the transport and storage of materials in bulk; padding, cushioning and stuffing materials (except of paper, cardboard, rubber or plastics); raw fibrous textile materials and substitutes therefor."
+  },
+  { "classId": 23, "description": "Yarns and threads, for textile use." },
+  {
+    "classId": 24,
+    "description": "Textiles and textile goods, not included in other classes; bed covers; table covers; household linen; curtains of textile or plastic."
+  },
+  { "classId": 25, "description": "Clothing, footwear, headgear." },
+  {
+    "classId": 26,
+    "description": "Lace and embroidery, ribbons and braid; buttons, hooks and eyes, pins and needles; artificial flowers; hair decorations; false hair."
+  },
+  {
+    "classId": 27,
+    "description": "Carpets, rugs, mats and matting, linoleum and other materials for covering existing floors; wall hangings (non-textile)."
+  },
+  {
+    "classId": 28,
+    "description": "Games and playthings; gymnastic and sporting articles not included in other classes; decorations for Christmas trees."
+  },
+  {
+    "classId": 29,
+    "description": "Meat, fish, poultry and game; meat extracts; preserved, frozen, dried and cooked fruits and vegetables; jellies, jams; eggs, milk and other dairy products; edible oils and fats."
+  },
+  {
+    "classId": 30,
+    "description": "Coffee, tea, cocoa, sugar, rice, tapioca, sago, artificial coffee; flour and preparations made from cereals; bread, pastry and confectionery; edible ice; sugar; honey; treacle; yeast, baking-powder; salt; mustard; vinegar, sauces (condiments); spices; ice."
+  },
+  {
+    "classId": 31,
+    "description": "Agricultural, horticultural and forestry products and grains not included in other classes; live animals; fresh fruits and vegetables; seeds, natural plants and flowers; foodstuffs for animals; malt."
+  },
+  {
+    "classId": 32,
+    "description": "Beers; mineral and aerated waters and other non-alcoholic beverages; fruit beverages and fruit juices; syrups and other preparations for making beverages."
+  },
+  { "classId": 33, "description": "Alcoholic beverages (except beers)." },
+  { "classId": 34, "description": "Tobacco; smokers' articles; matches." },
+  {
+    "classId": 35,
+    "description": "Advertising; business management; business administration; office functions."
+  },
+  {
+    "classId": 36,
+    "description": "Insurance; financial affairs; monetary affairs; real estate affairs."
+  },
+  {
+    "classId": 37,
+    "description": "Building construction; repair; installation services."
+  },
+  { "classId": 38, "description": "Telecommunications." },
+  {
+    "classId": 39,
+    "description": "Transport; packaging and storage of goods; travel arrangement."
+  },
+  { "classId": 40, "description": "Treatment of materials." },
+  {
+    "classId": 41,
+    "description": "Education; providing of training; entertainment; sporting and cultural activities."
+  },
+  {
+    "classId": 42,
+    "description": "Scientific and technological services and research and design relating thereto; industrial analysis and research services; design and development of computer hardware and software."
+  },
+  {
+    "classId": 43,
+    "description": "Services for providing food and drink; temporary accommodation."
+  },
+  {
+    "classId": 44,
+    "description": "Medical services; veterinary services; hygienic and beauty care for human beings or animals; agriculture, horticulture and forestry services."
+  },
+  {
+    "classId": 45,
+    "description": "Legal services; security services for the physical protection of tangible property and individuals; personal and social services rendered by others to meet the needs of individuals."
+  }
+]

@@ -6,31 +6,7 @@ import TrademarkCalculatorParameters from '@/components/TrademarkCalculatorParam
 import PriceSummary from '@/components/PriceSummary';
 import CalculatorActionButton from '@/components/CalculatorActionButton';
 
-export default function TrademarkCalculator() {
-  // TODO: fetch from BE (DB)
-  const trademarkClasses = [
-    {
-      classId: 1,
-      description: 'Class 1',
-    },
-    {
-      classId: 2,
-      description: 'Class 2',
-    },
-    {
-      classId: 3,
-      description: 'Class 3',
-    },
-    {
-      classId: 4,
-      description: 'Class 4',
-    },
-    {
-      classId: 5,
-      description: 'Class 5',
-    },
-  ];
-
+export default function TrademarkCalculator({ trademarkClasses }) {
   const [trademarkRegistrationFactors, setTrademarkRegistrationFactors] =
     useState({
       search: false,
@@ -47,14 +23,20 @@ export default function TrademarkCalculator() {
     (trademarkClass) => trademarkClass.isSelected
   ).length;
 
+  const [calculatedPrices, setCalculatedPrices] = useState({
+    applicationPrice: 0,
+    registrationPrice: 0,
+    totalPrice: 0,
+  });
+
   //TODO move to helper
-  function buildCalculationuery(factors) {
+  function buildCalculationUrl(factors) {
     const selectedClasses = factors.classes
       .filter((c) => c.isSelected)
       .map((c) => c.classId)
       .join(',');
 
-    return new URLSearchParams({
+    const query = new URLSearchParams({
       search: factors.search,
       type: factors.type,
       isColored: factors.isColored,
@@ -62,11 +44,20 @@ export default function TrademarkCalculator() {
       isExpress: factors.isExpress,
       classes: selectedClasses,
     }).toString();
+
+    return `${process.env.NEXT_PUBLIC_BACKEND_URL}/calculate?${query}`;
   }
 
   async function handleCalculate(trademarkRegistrationFactors) {
-    const query = buildCalculationuery(trademarkRegistrationFactors);
-    console.log(query);
+    const calculationUrl = buildCalculationUrl(trademarkRegistrationFactors);
+    const calculatedPricesResponse = await fetch(calculationUrl);
+    if (!calculatedPricesResponse.ok) {
+      //TODO show error somewhere in UI
+      throw new Error('Something went wrong');
+    }
+
+    const calculatedPricesFromResponse = await calculatedPricesResponse.json();
+    setCalculatedPrices(calculatedPricesFromResponse);
   }
 
   return (
@@ -80,19 +71,14 @@ export default function TrademarkCalculator() {
         setTrademarkRegistrationFactors={setTrademarkRegistrationFactors}
       />
       <PriceSummary
-        applicationPrice="1000"
-        registrationPrice="500"
-        totalPrice="1500"
+        applicationPrice={calculatedPrices.applicationPrice}
+        registrationPrice={calculatedPrices.registrationPrice}
+        totalPrice={calculatedPrices.totalPrice}
       />
       <CalculatorActionButton
         text="Calculate"
         onButtonClick={() => handleCalculate(trademarkRegistrationFactors)}
         disabled={!isClassSelected}
-      />
-      <CalculatorActionButton
-        text="Trademark registration"
-        color="green"
-        disabled
       />
     </>
   );

@@ -1,0 +1,14 @@
+[
+  {
+    "priceName": "trademarkRegistrationUa",
+    "applicationBase": 1000,
+    "applicationPerClass": 200,
+    "registrationBase": 500,
+    "registrationPerClass": 100,
+    "search": 1500,
+    "isColored": 500,
+    "multipleApplicants": 1000,
+    "isExpress": 1500,
+    "discountPercent": 10
+  }
+]
