@@ -27,7 +27,7 @@ app.use(express.json());
 app.use('/classes', classRoutes);
 app.use('/calculate', calculatorRoutes);
 
-app.get('/error', (req, res) => {
+app.get('/error', () => {
   throw new Error('Manual test error!');
 });
 
