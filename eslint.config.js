@@ -29,6 +29,7 @@ export default defineConfig([
       'prettier/prettier': 'error',
       'no-unused-vars': 'warn',
       'no-console': 'off',
+      'react/prop-types': 'off',
     },
     extends: [js.configs.recommended, prettierConfig],
   },
