@@ -1,5 +1,4 @@
-# .github/workflows/lint.yml
-name: Lint Checks
+name: Run Frontend Tests
 
 on:
   push:
@@ -8,7 +7,7 @@ on:
     branches: [main]
 
 jobs:
-  lint:
+  test:
     runs-on: ubuntu-latest
 
     steps:
@@ -22,10 +21,9 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
+        working-directory: apps/frontend
         run: npm ci
 
-      - name: Run Prettier check
-        run: npm run check-format
-
-      - name: Run ESLint
-        run: npm run lint
+      - name: Run Jest for frontend
+        working-directory: apps/frontend
+        run: npx jest --ci
