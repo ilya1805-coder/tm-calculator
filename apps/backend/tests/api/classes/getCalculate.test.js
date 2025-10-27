@@ -16,7 +16,7 @@ describe(' GET /calculate', () => {
   it('should return correct calculated data when prices are stored', async () => {
     await PriceModel.deleteMany({});
     await PriceModel.create({
-      priceName: 'trademarkRegistrationUa',
+      priceName: config.tmRegistrationPriceName,
       applicationBase: 1000,
       applicationPerClass: 100,
       registrationBase: 500,
