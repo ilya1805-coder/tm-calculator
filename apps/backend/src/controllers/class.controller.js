@@ -1,4 +1,4 @@
-import { classService } from '../services/class.service.js';
+import { classService } from '@/services/class.service.js';
 
 export const getClasses = async (req, res, next) => {
   try {
