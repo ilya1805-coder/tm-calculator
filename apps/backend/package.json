@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "NODE_ENV=development nodemon ./server.js --exec babel-node",
     "seed:classes": "babel-node src/seeders/class.seeder.js",
-    "seed:prices": "babel-node src/seeders/price.seeder.js"
+    "seed:prices": "babel-node src/seeders/price.seeder.js",
+    "test": "cross-env NODE_ENV=test jest"
   },
   "author": "",
   "license": "ISC",
@@ -21,6 +22,10 @@
     "@babel/core": "^7.28.4",
     "@babel/node": "^7.28.0",
     "@babel/preset-env": "^7.28.3",
-    "nodemon": "^3.1.10"
+    "cross-env": "^10.1.0",
+    "jest": "^30.2.0",
+    "mongodb-memory-server": "^10.2.3",
+    "nodemon": "^3.1.10",
+    "supertest": "^7.1.4"
   }
 }
