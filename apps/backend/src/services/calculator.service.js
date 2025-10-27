@@ -1,5 +1,5 @@
-import Price from '../models/price.model';
-import config from '../config/index.config.js';
+import Price from '@/models/price.model';
+import config from '@/config/index.config.js';
 
 export const calculatorService = {
   calculateTrademarkRegistration: async (trademarkRegistrationFactors) => {

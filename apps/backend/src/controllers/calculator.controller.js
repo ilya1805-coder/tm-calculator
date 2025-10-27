@@ -1,4 +1,4 @@
-import { calculatorService } from '../services/calculator.service.js';
+import { calculatorService } from '@/services/calculator.service.js';
 
 export const calculate = async (req, res, next) => {
   try {

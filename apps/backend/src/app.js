@@ -1,10 +1,10 @@
 import express from 'express';
 import cors from 'cors';
-import classRoutes from './routes/class.route';
-import calculatorRoutes from './routes/calculator.route';
-import { errorHandler } from './middlewares/error-handler.middleware';
-import { parseQueryParams } from './middlewares/parse-query-params.middleware.js';
-import config from './config/index.config.js';
+import classRoutes from '@/routes/class.route';
+import calculatorRoutes from '@/routes/calculator.route';
+import { errorHandler } from '@/middlewares/error-handler.middleware';
+import { parseQueryParams } from '@/middlewares/parse-query-params.middleware.js';
+import config from '@/config/index.config.js';
 
 const app = express();
 
