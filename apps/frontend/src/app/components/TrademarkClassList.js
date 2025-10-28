@@ -21,18 +21,16 @@ export default function TrademarkClassList({
   }
 
   return (
-    <div className="flex gap-2">
-      {classes.map((trademarkClass) => {
-        return (
-          <TrademarkClass
-            key={trademarkClass.classId}
-            classId={trademarkClass.classId}
-            description={trademarkClass.description}
-            isSelected={trademarkClass.isSelected}
-            onClassClick={() => handleClassClick(trademarkClass.classId)}
-          />
-        );
-      })}
+    <div className="flex flex-wrap gap-2">
+      {classes.map((trademarkClass) => (
+        <TrademarkClass
+          key={trademarkClass.classId}
+          classId={trademarkClass.classId}
+          description={trademarkClass.description}
+          isSelected={trademarkClass.isSelected}
+          onClassClick={() => handleClassClick(trademarkClass.classId)}
+        />
+      ))}
     </div>
   );
 }
