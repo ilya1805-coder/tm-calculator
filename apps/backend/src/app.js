@@ -2,6 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import cookieParser from 'cookie-parser';
 import classRoutes from '@/routes/class.route';
+import priceRoutes from '@/routes/price.route';
 import calculatorRoutes from '@/routes/calculator.route';
 import authRoutes from '@/routes/auth.route';
 import { errorHandler } from '@/middlewares/error-handler.middleware';
@@ -31,11 +32,13 @@ app.use(cookieParser());
 
 //Routing
 app.use('/classes', classRoutes);
+app.use('/prices', authenticateToken, priceRoutes);
 app.use('/calculate', calculatorRoutes);
 app.use('/', authRoutes);
 
+//TODO should be auth validation endpoint
 app.get('/dashboard-data', authenticateToken, async (req, res) => {
-  return res.json({ a: 1 });
+  return res.json({});
 });
 
 //Errors handling
