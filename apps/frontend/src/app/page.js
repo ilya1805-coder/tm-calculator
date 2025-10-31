@@ -3,7 +3,7 @@ import TrademarkCalculator from '@/components/TrademarkCalculator';
 export default async function Page() {
   async function getTrademarkClasses() {
     //TODO move to config
-    const res = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/classes`);
+    const res = await fetch(`${process.env.BACKEND_URL}/classes`);
     return res.json();
   }
   const trademarkClasses = await getTrademarkClasses();

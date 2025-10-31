@@ -1,0 +1,52 @@
+services:
+  mongo:
+    image: mongo:latest
+    container_name: mongo
+    restart: always
+    ports:
+      - '27017:27017'
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_USERNAME}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_PASSWORD}
+    volumes:
+      - mongo_data:/data/db
+
+  backend-app:
+    container_name: backend-app
+    build:
+      context: ./apps/backend
+      dockerfile: ./Dockerfile.${MODE}
+    ports:
+      - '3000:3000'
+    environment:
+      NODE_ENV: ${MODE}
+      DB_URI: ${DB_URI}
+      FRONTEND_URL: ${FRONTEND_URL}
+      ADMIN_USERNAME: ${BE_ADMIN_USERNAME}
+      ADMIN_PASSWORD_HASH: ${BE_ADMIN_PASSWORD_HASH}
+      JWT_SECRET: ${BE_JWT_SECRET}
+    volumes:
+      - ./apps/backend:/usr/src/app
+    command: sh -c "npm install && npm run seed:classes && npm run seed:prices && npm run dev"
+    depends_on:
+      - mongo
+
+  frontend-app:
+    container_name: frontend-app
+    build:
+      context: ./apps/frontend
+      dockerfile: ./Dockerfile.${MODE}
+    ports:
+      - ${FRONTEND_PORT}:${FRONTEND_PORT}
+    environment:
+      FRONTEND_PORT: ${FRONTEND_PORT}
+      NEXT_PUBLIC_BACKEND_URL: ${NEXT_PUBLIC_BACKEND_URL}
+      BACKEND_URL: ${BACKEND_URL}
+    volumes:
+      - ./apps/frontend:/usr/src/app
+    command: sh -c "npm install && npm run dev"
+    depends_on:
+      - backend-app
+
+volumes:
+  mongo_data: {}
