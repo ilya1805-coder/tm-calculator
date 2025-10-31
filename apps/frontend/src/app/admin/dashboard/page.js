@@ -10,7 +10,7 @@ export default async function Dashboard() {
 
   const res = await fetch(
     //TODO API calls should be moved to helpers
-    `${process.env.NEXT_PUBLIC_BACKEND_URL}/dashboard-data`,
+    `${process.env.BACKEND_URL}/dashboard-data`,
     {
       headers: {
         cookie: `token=${token}`,
@@ -24,7 +24,7 @@ export default async function Dashboard() {
   }
 
   const pricesRes = await fetch(
-    `${process.env.NEXT_PUBLIC_BACKEND_URL}/prices/trademarkRegistrationUa`,
+    `${process.env.BACKEND_URL}/prices/trademarkRegistrationUa`,
     {
       headers: {
         cookie: `token=${token}`,

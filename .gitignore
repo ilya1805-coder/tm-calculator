@@ -33,6 +33,7 @@
 /apps/frontend/.pnpm-debug.log*
 
 # env files (can opt-in for committing if needed)
+.env
 /apps/backend/.env
 /apps/frontend/.env
 
